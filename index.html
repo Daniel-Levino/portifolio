@@ -1,16 +1,209 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Levino - Portifólio</title>
-</head>
-<body>
-    <header>portifólio de Daniel Levino</header>
-    <body>
+<html lang="pt-BR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html">
+        <meta http-equiv="content-style-type" content="text/css">
+        <meta http-equiv="content-script-type" content="text/javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniel Levino">
+        <meta name="designer" content="Daniel Levino">
+        <meta name="publisher" content="Daniel Levino">
+        <title>Daniel Levino - Portfólio</title>
         
+        <link rel="stylesheet" href="./src/style.css">
+        
+    </head>
+
+    <body style="background-color: #2b2c2c; font-family: &#39;Light&#39;, &#39;Times New Roman&#39;, serif;">
+        <header>
+            <nav class="nav" id="menu-responsive">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#portifolio">Portfólio</a></li>
+                    <li><a onclick="closeMenu()" href="#contato">Contato</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre</a></li>
+                    <div class="icon-menu" onclick="openCloseMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <div class="content-home">
+                    <div class="description-contact">
+                        <div class="name">
+                            <h1>Programador Front-end e Back-end<br>Programador Desktop, Web e Mobile<br>Desenvolvedor de Jogos</h1>
+                            <p>
+                                Capacitado em Análise e Desenvolvimento de Sistemas,
+                                Programação Front-end e Back-end, Programação Mobile com
+                                Android Studio e Desenvolvimento de Games. Experiência
+                                em editores de Imagens, Audios e Vídeos
+                            </p>
+                        </div>
+                        <a onclick="scrollToAdOnClick(event)" href="#contato" class="button-contact">Contato</a>
+                    </div>
+
+                    <picture class="image-card">
+                        <img src="./src/Daniel-Levino.jpg" alt="Daniel Levino">
+                    </picture>
+                </div>
+
+            </section>
+
+            <section id="portifolio">
+                <h2 class="title-section">Portfólio</h2>
+                <h3 class="title">Este portifólio está em construção. Por este motivo, consta abaixo apenas alguns dos trabalhos realizados. Para mais, visite meu Github e/ou entre em contato.</h3>
+                <div class="content-portifolio">
+                    <div class="column">
+                        <div class="card">
+                            <picture>
+                                <img src="./src/img/EADI_logo.png" alt="Logo da plataforma EADInclusivo" style="width: 100%; height: 100%;">
+                            </picture>
+                            <div class="container">
+                                <h2 class="title">EADInclusivo</h2>
+                                <p class="text-card">
+                                    Plataforma de Ensino Inclusivo, voltado para o público surdo e suas necessidades, 
+                                    onde o aluno tem acesso, além do curso fornecido pelo instrutor, ao apoio de 
+                                    intérpretes, os quais são catalogados e classificados através de ícones que identificam 
+                                    as características de acessibilidade do mesmo.<br>Idealizado por mim (Daniel Levino) foi 
+                                    projetado utilizando uma API construída com NodeJS e Sequelize e um Front-end com Vue.js e
+                                    Quasar.
+                                </p>
+                                <a class="button" href="https://github.com/Equipe-41/eadi2021_backend" target="_blank" rel="noreferrer">Back-end (github)</a>
+                                <a class="button" href="https://github.com/Equipe-41/EADI_2020-2" target="_blank" rel="noreferrer">Front-end (github) </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <picture>
+                                <img src="./src/img/PedagoyOn_logotipo.png" alt="Logo da PedagogyOn" style="width: 100%; height: 100%;">
+                            </picture>
+                            <div class="container">
+                                <h2 class="title">PedagogyOn</h2>
+                                <p class="text-card">
+                                    Paltaforma para busca de profissionais da educação, voltados para o ensino de 
+                                    alunos com necessidades especiais. Neste ambiente, pais e responsáveis podem 
+                                    pesquisar por profissionais devidamente qualificados e conversar através de um 
+                                    chat esclusivo. O ambiente fornece também a possibilidade de se firmar contrato 
+                                    entre as partes dentro da própria plataforma. O projeto ainda está em construção 
+                                    e possui uma API funcional, um Front-end Web em Vue e Quasar e uma Aplicação 
+                                    Desktop. Suas futuras atualizações devem incluir um App Mobile.
+                                </p>
+                                <a class="button" href="https://github.com/FICR-camaradas/api_pedagogyon" target="_blank" rel="noreferrer">Back-end (github)</a>
+                                <a class="button" href="https://github.com/FICR-camaradas/new_PedagogyON" target="_blank" rel="noreferrer">Aplicação Desktop (github) </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <section id="contato">
+                <h2 class="title-section">Contato</h2>
+
+                <div class="content-contato">
+                    <address class="address">
+                        <div class="phone">
+                            <a class="phone-text" href="+5581997194976">
+                                <img src="./src/phone.svg" alt="ícone telefone" style="width: 20px; height: 20px;">+55 (81) 9.9719-4976
+                            </a>
+                        </div>
+                
+                        <div class="email">
+                            <a class="email-text" href="mailto:levinotst@gmail.com">
+                                <img src="./src/mail.svg" alt="ícone email" style="width: 20px; height: 20px;">levinotst@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="social-address">
+                            <p class="text">Me siga</p>
+                
+                            <div class="container-logos">
+                                <a href="https://www.facebook.com/dlevino" target="_blank" rel="noreferrer"><img src="./src/facebook.svg" alt="Logo Facebook" style="width: 24px; height: 24px;"></a>
+
+                                <a href="https://www.instagram.com/daniel.levino/" target="_blank" rel="noreferrer"><img src="./src/instagram.svg" alt="Logo Instagram" style="width: 24px; height: 24px;"></a>
+
+                                <a href="https://www.linkedin.com/in/daniel-levino-a48350110/" target="_blank" rel="noreferrer"><img src="./src/linkedin.svg" alt="Logo Linkedin" style="width: 24px; height: 24px;"></a>
+                            </div>
+                        </div>
+                    </address>
+                </div>
+            </section>
+
+            <section id="sobre">
+                <h2 class="title-section">Sobre mim</h2>
+
+                <div id="card-hello">
+                    <p class="text-hello">
+                        Nascido em Campina Grande-PB e filho de uma professora e um comunicólogo, eu e meus
+                        irmãos sempre fomos ensinados sobre o apreço ao conhecimento, à educação e ao 
+                        crescimento humano, espiritual e intelectual. Aos 16 anos iniciei minha vida profissional 
+                        trabalhando como atendente em um bar local. Toda minha caminhada profissional me ensinou 
+                        muito sobre trabalho em equipe, respeito e perseverança, qualidades que trago comigo 
+                        inclusive em minha vida acadêmica. Aprendi a valorizar a respiração de cada dia e o suor 
+                        que escorre na testa nos momentos de grande empenho. Vivo hoje feliz em Recife, junto da minha 
+                        esposa e meus pets.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="content-footer">
+                <div class="menu-footer">
+                    <span class="title-menu">Menu</span>
+                    <ul>
+                        <li><a onclick="scrollToAdOnClick(event)" href="#home">Home</a></li>
+                        <li><a onclick="scrollToAdOnClick(event)" href="#portifolio">Portifólio</a></li>
+                        <li><a onclick="scrollToAdOnClick(event)" href="#contato">Contato</a></li>
+                        <li><a onclick="scrollToAdOnClick(event)" href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-footer">
+                    <span class="title-menu">Redes Sociais</span>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/daniel-levino-a48350110/" rel="noreferrer" target="_blank">Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/daniel.levino/" rel="noreferrer" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/dlevino" rel="noreferrer" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="contato-footer">
+                    <div class="phone-contact">
+                        <span class="contato-footer-title">
+                            Telefone e WhatsApp
+                        </span>
+                        <a href="https://api.whatsapp.com/send?phone=5511952028006">
+                            +55 (81) 9.9719-4976
+                        </a>
+                    </div>
+                    
+                    <div class="contact-address">
+                        <h3 class="contato-footer-title">
+                            E-mail para contato
+                        </h3>
+                        <a href="mailto:levinotst@gmail.com">
+                            levinotst@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="credits-footer">
+                Copyright © 2021 <a onclick="scrollToAdOnClick(event)" href="#home">Daniel Levino</a>
+            </p>
+        </footer>
+        <script async="" src="./src/script.js"></script>
+
+
     </body>
-    <footer>create by Daniel Levino</footer>
-</body>
 </html>
